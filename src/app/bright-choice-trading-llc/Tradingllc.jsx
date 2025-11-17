@@ -93,7 +93,7 @@ const Tradingllc = () => {
         <section className="bg-white">
             <section className="bg-white mt-20">
                 <div className="bg-[#2a2a2a] py-16 text-center mb-10">
-                    <h1 className="text-4xl font-semibold text-white">Bright Choice Trading LLC</h1>
+                    <h1 className="text-4xl font-semibold text-white" style={{ fontFamily: "Roboto Slab, serif" }}>Bright Choice Trading LLC</h1>
                 </div>
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-5">
                     {/* LEFT SIDE - TEXT */}
@@ -149,7 +149,7 @@ const Tradingllc = () => {
 
             <section className="py-10 px-5 md:px-16 bg-gray-50 mt-10">
                 <div className="text-center mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Our Products
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>
@@ -174,7 +174,7 @@ const Tradingllc = () => {
 
                             {/* Content */}
                             <div className="flex flex-col justify-between flex-grow p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 text-center mb-6 min-h-[56px]">
+                                <h3 className="text-lg font-semibold text-gray-900 text-center mb-6 min-h-[56px]" style={{ fontFamily: "Roboto Slab, serif" }}>
                                     {product.title}
                                 </h3>
                             </div>

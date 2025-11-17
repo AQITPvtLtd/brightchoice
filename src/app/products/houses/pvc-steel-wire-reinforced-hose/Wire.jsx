@@ -148,7 +148,7 @@ const Wire = () => {
                             </div>
 
                             {/* Heading */}
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: "Roboto Slab, serif" }}>
                                 PVC Steel Wire <br className="hidden sm:block" /> Reinforced Clear Hose
                             </h1>
 
@@ -177,7 +177,7 @@ const Wire = () => {
 
                             {/* Product Details */}
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-3">Overview</h2>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: "Roboto Slab, serif" }}>Overview</h2>
                                 <div className="h-1 w-16 bg-red-600 mb-4"></div>
 
                                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -205,7 +205,7 @@ const Wire = () => {
             <section className="bg-gray-50 py-10 px-4 md:px-10">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Key Uses & Applications
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>
@@ -233,7 +233,7 @@ const Wire = () => {
 
                 {/* Heading */}
                 <div className="text-center mt-10 mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Product Highlights
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>
@@ -264,7 +264,7 @@ const Wire = () => {
                 <div className="max-w-6xl mx-auto">
                     {/* Section Heading */}
                     <div className="text-center mb-10">
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
                             Technical Details
                             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                         </h2>
@@ -294,7 +294,7 @@ const Wire = () => {
             <section className="w-full px-4 md:px-10 lg:px-20 py-10 bg-white">
                 {/* Heading */}
                 <div className="mb-6 flex justify-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center relative inline-block">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center relative inline-block" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Technical Specifications
                         <span className="block w-20 h-1 bg-red-600 mx-auto mt-2"></span>
                     </h2>
@@ -337,7 +337,7 @@ const Wire = () => {
 
                 {/* Notes */}
                 <div className="mt-10 bg-gray-100 p-6 md:p-8 rounded-xl">
-                    <h3 className="text-xl text-[#2a2a2a] font-semibold mb-4">
+                    <h3 className="text-xl text-[#2a2a2a] font-semibold mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Pressure & Vacuum Notes
                     </h3>
 

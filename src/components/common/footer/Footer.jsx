@@ -29,7 +29,7 @@ export default function Footer() {
 
         {/* Sub-Companies */}
         <div>
-          <h2 className="text-xl font-semibold mb-3">Sub-Companies</h2>
+          <h2 className="text-xl font-semibold mb-3" style={{ fontFamily: "Roboto Slab, serif" }}>Sub-Companies</h2>
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>
               <Link
@@ -53,7 +53,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h2 className="text-xl font-semibold mb-3">Quick Links</h2>
+          <h2 className="text-xl font-semibold mb-3" style={{ fontFamily: "Roboto Slab, serif" }}>Quick Links</h2>
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>
               <Link href="/" className="hover:text-gray-900 transition">
@@ -80,7 +80,7 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h2 className="text-xl font-semibold mb-3">Reach Out to Us</h2>
+          <h2 className="text-xl font-semibold mb-3" style={{ fontFamily: "Roboto Slab, serif" }}>Reach Out to Us</h2>
           <ul className="space-y-3 text-gray-700 text-sm">
             <li className="flex items-center gap-2">
               <FaUser className="text-gray-900" />

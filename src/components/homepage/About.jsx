@@ -6,7 +6,7 @@ export default function About() {
     <section className="py-16 bg-white text-center">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-wide text-gray-900 mb-8">
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-wide text-gray-900 mb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
           ABOUT US
         </h2>
 

@@ -53,7 +53,7 @@ export default function Companies() {
               <div className="py-4 text-center bg-[#f9f9f9]">
                 <Link
                   href={company.link}
-                  className="text-lg font-medium text-gray-800 hover:text-gray-900 transition"
+                  className="text-lg font-medium text-gray-800 hover:text-gray-900 transition" style={{ fontFamily: "Roboto Slab, serif" }}
                 >
                   {company.name}
                 </Link>

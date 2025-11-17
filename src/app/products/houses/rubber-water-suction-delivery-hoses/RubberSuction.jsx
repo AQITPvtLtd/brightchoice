@@ -47,7 +47,7 @@ export default function RubberSuction() {
                             </div>
 
                             {/* Heading */}
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: "Roboto Slab, serif" }}>
                                 Rubber Water Suction <br className="hidden sm:block" /> & Delivery Hoses
                             </h1>
 
@@ -76,7 +76,7 @@ export default function RubberSuction() {
 
                             {/* Product Details */}
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-3">Overview</h2>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: "Roboto Slab, serif" }}>Overview</h2>
                                 <div className="h-1 w-16 bg-red-600 mb-4"></div>
 
                                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -107,7 +107,7 @@ export default function RubberSuction() {
             <section className="bg-gray-50 py-16 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-2">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
                             Features & Benefits
                         </h2>
                         <div className="h-1 w-16 bg-red-600 mx-auto"></div>
@@ -133,7 +133,7 @@ export default function RubberSuction() {
                 <div className="max-w-7xl mx-auto">
                     {/* Centered Title */}
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-2">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
                             Technical Specifications
                         </h2>
                         <div className="h-1 w-16 bg-red-600 mx-auto"></div>
@@ -195,7 +195,7 @@ export default function RubberSuction() {
                 <div className="max-w-7xl mx-auto">
                     {/* Centered Title */}
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-2">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
                             Brand Premier Extra Specifications
                         </h2>
                         <div className="h-1 w-16 bg-red-600 mx-auto"></div>

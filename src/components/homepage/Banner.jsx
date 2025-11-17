@@ -19,7 +19,7 @@ export default function Banner() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 lg:px-28 text-white max-w-3xl">
-        <h1 className="text-4xl md:text-5xl font-semibold mb-6">PVC Hoses</h1>
+        <h1 className="text-4xl md:text-5xl font-semibold mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>PVC Hoses</h1>
 
         <p className="text-base md:text-sm lg:text-sm xl:text-sm leading-relaxed mb-8">
           Since inception, We at Rav Group have established & built our business model by

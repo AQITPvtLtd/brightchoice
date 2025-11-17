@@ -24,7 +24,7 @@ export default function WhatWeDo() {
             As Rav Group, we are proud of being a big manufacturer of
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-serif font-semibold leading-snug mb-6">
+          <h2 className="text-2xl md:text-3xl font-semibold leading-snug mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
             Pvc & PE Lay Flat Hose in the World
             and building effective
           </h2>

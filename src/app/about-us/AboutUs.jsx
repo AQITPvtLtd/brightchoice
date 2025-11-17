@@ -7,7 +7,7 @@ export default function AboutUs() {
     <section className="w-full bg-white text-[#0e0e0e] mt-20">
       {/* Top Dark Section */}
       <div className="bg-[#2a2a2a] py-16 text-center">
-        <h1 className="text-4xl font-semibold text-white">About Us</h1>
+        <h1 className="text-4xl font-semibold text-white" style={{ fontFamily: "Roboto Slab, serif" }}>About Us</h1>
       </div>
 
       {/* Main Content */}

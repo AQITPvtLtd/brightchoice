@@ -9,7 +9,7 @@ export default function Contact() {
     return (
         <section className="bg-[#fafafa] mt-20">
             <div className="bg-[#2a2a2a] py-16 text-center mb-10">
-                <h1 className="text-4xl font-semibold text-white">Contact Us</h1>
+                <h1 className="text-4xl font-semibold text-white" style={{ fontFamily: "Roboto Slab, serif" }}>Contact Us</h1>
             </div>
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
@@ -25,7 +25,7 @@ export default function Contact() {
                     <div className="absolute inset-0 bg-black/40"></div>
 
                     <div className="absolute inset-0 flex flex-col justify-center px-8 text-white">
-                        <h2 className="text-3xl font-semibold mb-6">Reach Out to Us</h2>
+                        <h2 className="text-3xl font-semibold mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>Reach Out to Us</h2>
                         <ul className="space-y-4 text-lg">
                             <li className="flex items-center gap-3">
                                 <FaUser />
@@ -65,7 +65,7 @@ export default function Contact() {
 
                 {/* Right Section */}
                 <div className="bg-[#f9f9f9] rounded-2xl shadow-sm p-8">
-                    <h2 className="text-3xl font-semibold mb-8 text-[#0e0e0e]">
+                    <h2 className="text-3xl font-semibold mb-8 text-[#0e0e0e]" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Reach Out to Us
                     </h2>
 

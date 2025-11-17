@@ -136,7 +136,7 @@ const Standard = () => {
                             </div>
 
                             {/* Heading */}
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: "Roboto Slab, serif" }}>
                                 PVC Lay Flat Hose <br className="hidden sm:block" /> - Standard Duty
                             </h1>
 
@@ -165,7 +165,7 @@ const Standard = () => {
 
                             {/* Product Details */}
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-3">Overview</h2>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: "Roboto Slab, serif" }}>Overview</h2>
                                 <div className="h-1 w-16 bg-red-600 mb-4"></div>
 
                                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -205,7 +205,7 @@ const Standard = () => {
             <section className="bg-gray-50 py-10 px-4 md:px-10">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Key Uses & Applications
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>
@@ -233,7 +233,7 @@ const Standard = () => {
 
                 {/* Heading */}
                 <div className="text-center mt-10 mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Product Highlights
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>
@@ -264,8 +264,8 @@ const Standard = () => {
                 <div className="max-w-6xl mx-auto">
                     {/* Section Heading */}
                     <div className="text-center mb-10">
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative">
-                            Technical Highlights
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
+                            Technical Details
                             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                         </h2>
                     </div>
@@ -295,7 +295,7 @@ const Standard = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Section Heading */}
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] inline-block relative pb-2">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2a2a2a] inline-block relative pb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
                             Technical Specifications
                             <span className="absolute left-1/2 -translate-x-1/2 bottom-0 h-[4px] w-16 bg-red-500 rounded-full"></span>
                         </h2>

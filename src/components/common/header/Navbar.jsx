@@ -49,7 +49,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-white font-medium hover:text-gray-300 transition"
+              className="text-white font-medium hover:text-gray-300 transition" style={{ fontFamily: "Roboto Slab, serif" }}
             >
               {link.name}
             </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact-us"
-            className="bg-[#2a2a2a] border border-black text-white px-6 py-2 rounded-full font-medium hover:bg-black transition"
+            className="bg-[#2a2a2a] border border-black text-white px-6 py-2 rounded-full font-medium hover:bg-black transition" style={{ fontFamily: "Roboto Slab, serif" }}
           >
             Call Us
           </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-base font-medium text-gray-800 hover:text-black transition"
+                className="text-base font-medium text-gray-800 hover:text-black transition" style={{ fontFamily: "Roboto Slab, serif" }}
               >
                 {link.name}
               </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
             <Link
               href="/contact-us"
               onClick={() => setOpen(false)}
-              className="bg-[#2a2a2a] mt-2 border border-black text-white py-2 px-6 w-fit rounded-full font-medium hover:bg-black transition"
+              className="bg-[#2a2a2a] mt-2 border border-black text-white py-2 px-6 w-fit rounded-full font-medium hover:bg-black transition" style={{ fontFamily: "Roboto Slab, serif" }}
             >
               Call Us
             </Link>
