@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] mt-20">
+    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] mt-20">
       {/* Background Image */}
       <Image
         src="/banner/banner1.png" // 🟢 Replace with your image
