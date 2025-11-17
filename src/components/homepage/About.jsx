@@ -6,7 +6,7 @@ export default function About() {
     <section className="py-16 bg-white text-center">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-wide text-gray-900 mb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-wide text-[#2a2a2a] mb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
           ABOUT US
         </h2>
 
@@ -34,10 +34,11 @@ export default function About() {
         <div className="mt-10">
           <Link
             href="/about-us"
-            className="inline-block bg-gray-900 border-2 border-gray-900 text-white px-8 py-3 rounded-full text-sm md:text-base font-medium hover:bg-white hover:text-black transition-all duration-300"
+            className="inline-block bg-[#2a2a2a] border-2 text-white px-8 py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-lg"
           >
             KNOW MORE
           </Link>
+
         </div>
       </div>
     </section>

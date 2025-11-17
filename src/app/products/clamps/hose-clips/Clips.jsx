@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from "react";
+import Link from 'next/link';
 import QuoteModal from '../../quotemodal/QuoteModal';
 import ModalForm from '../../modalform/ModalForm';
 
@@ -104,9 +105,9 @@ const Clips = () => {
                         <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 text-white">
                             {/* Breadcrumb */}
                             <div className="text-sm text-gray-200 mb-2">
-                                <a href="#" className="hover:text-blue-400">Home</a>
+                                <Link href="/" className="hover:text-blue-400">Home</Link>
                                 <span className="mx-2">/</span>
-                                <a href="#" className="hover:text-blue-400">Hose Clamps & Clips</a>
+                                <Link href="/" className="hover:text-blue-400">Hose Clamps & Clips</Link>
                                 <span className="mx-2">/</span>
                                 <span className="font-medium text-white">
                                     Hose Clips
@@ -229,7 +230,7 @@ const Clips = () => {
             <section className="w-full px-4 md:px-10 lg:px-20 py-10">
                 {/* Centered Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" >
                         Specifications Table
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>

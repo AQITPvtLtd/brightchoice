@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from "react";
+import Link from 'next/link';
 import QuoteModal from '../../quotemodal/QuoteModal';
 import ModalForm from '../../modalform/ModalForm';
 
@@ -77,9 +78,9 @@ const Hex = () => {
                         <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 text-white">
                             {/* Breadcrumb */}
                             <div className="text-sm text-gray-200 mb-2">
-                                <a href="#" className="hover:text-blue-400">Home</a>
+                                <Link href="/" className="hover:text-blue-400">Home</Link>
                                 <span className="mx-2">/</span>
-                                <a href="#" className="hover:text-blue-400">Fittings</a>
+                                <Link href="/" className="hover:text-blue-400">Fittings</Link>
                                 <span className="mx-2">/</span>
                                 <span className="font-medium text-white">
                                     Hex Nipples

@@ -132,11 +132,15 @@ const Form = () => {
             <button
                 type="submit"
                 disabled={loading}
-                className={`w-full bg-black border-2 border-black text-white text-lg font-medium py-3 rounded-full hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 ${loading ? "cursor-not-allowed opacity-70" : "cursor-pointer"
+                className={`w-full bg-[#2a2a2a] text-white text-lg font-medium py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2
+    ${loading
+                        ? "cursor-not-allowed opacity-70"
+                        : "cursor-pointer hover:bg-black hover:-translate-y-1 hover:shadow-lg"
                     }`}
             >
                 {loading ? <ClipLoader size={20} /> : "Submit"}
             </button>
+
         </form>
     )
 }

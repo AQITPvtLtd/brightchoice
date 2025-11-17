@@ -59,7 +59,7 @@ export default function Navbar() {
         {/* Desktop Button */}
         <div className="hidden md:block">
           <Link
-            href="/contact-us"
+            href="tel:0097148856117"
             className="bg-[#2a2a2a] border border-black text-white px-6 py-2 rounded-full font-medium hover:bg-black transition" style={{ fontFamily: "Roboto Slab, serif" }}
           >
             Call Us
@@ -93,7 +93,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/contact-us"
+              href="tel:0097148856117"
               onClick={() => setOpen(false)}
               className="bg-[#2a2a2a] mt-2 border border-black text-white py-2 px-6 w-fit rounded-full font-medium hover:bg-black transition" style={{ fontFamily: "Roboto Slab, serif" }}
             >
