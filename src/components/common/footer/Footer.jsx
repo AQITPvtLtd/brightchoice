@@ -123,8 +123,15 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#0e0e0e] text-white text-center py-4 text-sm">
-        Copyright © RavGroup 2024. All Rights Reserved.
+      <div className="bg-[#2a2a2a] text-white text-center py-4 text-sm">
+        Design & Developed By{" "}
+        <Link
+          href="https://tekbooster.com"
+          className="hover:text-gray-300 transition"
+          target="_blank"
+        >
+          Tek Booster (Digital Marketing Company)
+        </Link>
       </div>
     </footer>
   );
