@@ -20,7 +20,7 @@ export default function SocialLinks() {
         {/* facebook */}
         <div className="group relative transition-transform duration-500 hover:scale-125">
           <Link
-            href="/"
+            href="https://www.facebook.com/people/Royal-Hoses/61583936131671/"
             role="button"
             target="_blank"
           >
@@ -35,7 +35,7 @@ export default function SocialLinks() {
         {/* Instagram */}
         <div className="group relative w-max cursor-pointer transition-transform duration-500 hover:scale-125">
           <Link
-            href="/"
+            href="https://www.instagram.com/royal_hoses/"
             role="button"
             target="_blank"
           >
@@ -50,7 +50,7 @@ export default function SocialLinks() {
         {/* Google */}
         <div className="group relative text-3xl w-max cursor-pointer transition-transform duration-500 hover:scale-125">
           <Link
-            href="https://maps.app.goo.gl/2kTe3TuuW4wuiuY68"
+            href="https://maps.app.goo.gl/sgSaGsnUNdQuY3d77"
             role="button"
             target="_blank"
           >
