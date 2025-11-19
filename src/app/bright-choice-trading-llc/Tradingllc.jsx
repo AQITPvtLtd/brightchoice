@@ -86,6 +86,18 @@ const products = [
         image: "/products/hoseclip.webp",
         link: "/products/clamps/hose-clips",
     },
+    {
+        id: 14,
+        title: "Submersible Pumps",
+        image: "/products/multi.webp",
+        link: "/products/pumps/submersible-pumps-with-motor-multistage",
+    },
+    {
+        id: 15,
+        title: "Centrifugal Pumps",
+        image: "/products/dwp.webp",
+        link: "/products/pumps/diesel-driven-centrifugal-pumps",
+    },
 ];
 
 const Tradingllc = () => {

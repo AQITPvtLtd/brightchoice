@@ -62,11 +62,10 @@ export default function Contact() {
 
 
                 {/* Right Section */}
-                <div className="bg-[#f9f9f9] rounded-2xl shadow-sm p-8">
+                <div className="bg-[#f9f9f9] mb-10 rounded-2xl shadow-sm p-8">
                     <h2 className="text-3xl font-semibold mb-8 text-[#0e0e0e]" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Reach Out to Us
                     </h2>
-
                     <Form />
                 </div>
             </div>
