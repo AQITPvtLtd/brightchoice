@@ -64,7 +64,7 @@ const ModalForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-3">
             {/* Full Name */}
             <div>
                 <label className="block text-sm font-medium text-white mb-1">
@@ -119,7 +119,7 @@ const ModalForm = () => {
                     Message
                 </label>
                 <textarea
-                    rows="4"
+                    rows="1"
                     name="message"
                     placeholder="Message"
                     value={formData.message}
@@ -132,7 +132,7 @@ const ModalForm = () => {
             <button
                 type="submit"
                 disabled={loading}
-                className={`w-full bg-[#2a2a2a] text-white text-lg font-medium py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2
+                className={`w-full bg-[#2a2a2a] mt-5 text-white text-lg font-medium py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2
     ${loading
                         ? "cursor-not-allowed opacity-70"
                         : "cursor-pointer hover:bg-black hover:-translate-y-1 hover:shadow-lg"

@@ -119,7 +119,7 @@ const Form = () => {
                     Message
                 </label>
                 <textarea
-                    rows="4"
+                    rows="2"
                     name="message"
                     placeholder="Message"
                     value={formData.message}

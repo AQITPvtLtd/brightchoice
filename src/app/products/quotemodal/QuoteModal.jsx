@@ -6,7 +6,7 @@ export default function QuoteModal({ isOpen, onClose, children }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center pt-20 p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center pt-25 p-4">
 
       {/* Background Overlay */}
       <div
