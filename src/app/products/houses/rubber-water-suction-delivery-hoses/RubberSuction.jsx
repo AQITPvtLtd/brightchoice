@@ -203,7 +203,7 @@ export default function RubberSuction() {
                     </div>
 
                     {/* Table Wrapper */}
-                    <div className="overflow-x-auto shadow-md rounded-xl bg-white">
+                    <div className="overflow-x-auto shadow-md rounded-xl bg-white mb-10">
                         <table className="min-w-full border-collapse border border-gray-300">
                             <thead>
                                 <tr className="bg-[#2a2a2a] text-white text-left border-b border-gray-300">
