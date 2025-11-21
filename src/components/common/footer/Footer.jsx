@@ -67,7 +67,7 @@ export default function Footer() {
             
             <li className="flex items-center gap-2">
               <FaUser className="text-gray-900" />
-              <Link href="https://maps.app.goo.gl/oFM717mUQrRWVJcQ9" className="hover:text-gray-900 transition">
+              <Link href="https://maps.app.goo.gl/oFM717mUQrRWVJcQ9" target="_blank" className="hover:text-gray-900 transition">
                 Bright Choice Trading LLC
               </Link>
             </li>
