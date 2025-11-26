@@ -1,19 +1,50 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+
+const leftToRight = {
+  hidden: { opacity: 0, x: -50 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+const rightToLeft = {
+  hidden: { opacity: 0, x: 50 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
 
 export default function AboutUs() {
   return (
-    <section className="w-full bg-white text-[#0e0e0e] mt-20">
+    <section className="w-full bg-white text-[#0e0e0e] mt-20 overflow-x-hidden">
       {/* Top Dark Section */}
       <div className="bg-[#2a2a2a] py-16 text-center">
-        <h1 className="text-4xl font-semibold text-white" style={{ fontFamily: "Roboto Slab, serif" }}>About Us</h1>
+        <h1
+          className="text-4xl font-semibold text-white"
+          style={{ fontFamily: "Roboto Slab, serif" }}
+        >
+          About Us
+        </h1>
       </div>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12 items-stretch">
-        {/* Left Content */}
-        <div className="lg:w-[55%] text-gray-700 text-sm leading-relaxed space-y-4 lg:pl-10">
+
+        {/* LEFT CONTENT — LEFT -> RIGHT Animation */}
+        <motion.div
+          className="lg:w-[55%] text-gray-700 text-sm leading-relaxed space-y-4 lg:pl-10"
+          variants={leftToRight}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <p>
             Since 1982, Rav Group continues to take a leading role in the irrigation industry by
             offering products, services and projects on world standards.
@@ -55,18 +86,25 @@ export default function AboutUs() {
               <li>Integrity</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right Image */}
-        <div className="lg:w-[45%] flex justify-center items-stretch">
+        {/* RIGHT IMAGE — RIGHT -> LEFT Animation */}
+        <motion.div
+          className="lg:w-[45%] flex justify-center items-stretch"
+          variants={rightToLeft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <Image
-            src="/about/img.png" // <-- replace with your actual image path
+            src="/about/img.png"
             alt="Green Hose on Grass"
             width={600}
             height={400}
             className="rounded-2xl object-cover w-full h-full max-h-[1000px]"
           />
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );

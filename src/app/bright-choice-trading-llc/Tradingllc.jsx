@@ -2,6 +2,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+
+// Fade + Slide Up Animation
+const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    show: (i = 1) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: "easeOut",
+            delay: i * 0.15, // Stagger for each item
+        },
+    }),
+};
 
 const products = [
     {
@@ -20,6 +35,7 @@ const products = [
         image: "/products/standard.webp",
         link: "/products/houses/pvc-lay-flat-hose-standard",
     },
+
     {
         id: 3,
         title: "PVC Lay Flat Hose - Heavy Duty 10 Bar",
@@ -103,40 +119,54 @@ const products = [
 const Tradingllc = () => {
     return (
         <section className="bg-white">
-            <section className="py-10 px-5 md:px-16 bg-gray-50 mt-20">
+            <section className="py-10 px-5 md:px-16 bg-gray-50 mt-20 overflow-x-hidden">
                 <div className="text-center mb-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative" style={{ fontFamily: "Roboto Slab, serif" }}>
+                    <h2
+                        className="text-2xl md:text-3xl font-bold text-[#2a2a2a] inline-block relative"
+                        style={{ fontFamily: "Roboto Slab, serif" }}
+                    >
                         Our Products
                         <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-red-500 rounded"></span>
                     </h2>
                 </div>
+
                 <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                    {products.map((product) => (
-                        <Link
+                    {products.map((product, index) => (
+                        <motion.div
                             key={product.id}
-                            href={product.link}
-                            className="bg-white rounded-2xl shadow-md hover:shadow-xl overflow-hidden transition-all duration-300 flex flex-col cursor-pointer"
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.2 }}
+                            custom={index * 0.15}
                         >
-                            {/* Image */}
-                            <div className="relative w-full aspect-[4/3]">
-                                <Image
-                                    src={product.image}
-                                    alt={product.title}
-                                    fill
-                                    className="object-contain bg-white p-4"
-                                    sizes="(max-width: 768px) 100vw, 33vw"
-                                />
-                            </div>
+                            <Link
+                                href={product.link}
+                                className="bg-white rounded-2xl shadow-md hover:shadow-xl overflow-hidden transition-all duration-300 flex flex-col cursor-pointer"
+                            >
+                                {/* Image */}
+                                <div className="relative w-full aspect-[4/3]">
+                                    <Image
+                                        src={product.image}
+                                        alt={product.title}
+                                        fill
+                                        className="object-contain bg-white p-4"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
 
-                            {/* Content */}
-                            <div className="flex flex-col justify-between flex-grow p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 text-center mb-6 min-h-[56px]" style={{ fontFamily: "Roboto Slab, serif" }}>
-                                    {product.title}
-                                </h3>
-                            </div>
-                        </Link>
+                                {/* Content */}
+                                <div className="flex flex-col justify-between flex-grow p-6">
+                                    <h3
+                                        className="text-lg font-semibold text-gray-900 text-center mb-6 min-h-[56px]"
+                                        style={{ fontFamily: "Roboto Slab, serif" }}
+                                    >
+                                        {product.title}
+                                    </h3>
+                                </div>
+                            </Link>
+                        </motion.div>
                     ))}
-
                 </div>
             </section>
         </section>
