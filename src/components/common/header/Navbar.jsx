@@ -12,7 +12,7 @@ export default function Navbar() {
     setLinks([
       { name: "Home", href: "/" },
       { name: "About Us", href: "/about-us" },
-      { name: "Our Products", href: "https://royalehoses.ravgrp.com/" },
+      { name: "Our Products", href: "https://royalhoses.tekbooster.com/" },
       { name: "Contact Us", href: "/contact-us" },
     ]);
   }, []);
