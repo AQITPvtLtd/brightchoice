@@ -19,7 +19,7 @@ export default function Companies() {
           id: 2,
           name: "Royal Hoses",
           image: "/companies/img1.png",
-          link: "https://royalehoses.ravgrp.com/",
+          link: "https://royalhoses.tekbooster.com/",
         },
         {
           id: 3,
