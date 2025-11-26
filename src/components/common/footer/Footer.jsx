@@ -134,7 +134,7 @@ export default function Footer() {
           className="hover:text-gray-300 transition"
           target="_blank"
         >
-          Design & Developed By Tek Booster (Digital Marketing Company)
+          Design & Developed By Tek Booster <br className="lg:hidden block" /> (Digital Marketing Company)
         </Link>
       </div>
     </footer>
