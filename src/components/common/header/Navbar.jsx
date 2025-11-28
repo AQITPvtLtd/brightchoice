@@ -12,7 +12,7 @@ export default function Navbar() {
     setLinks([
       { name: "Home", href: "/" },
       { name: "About Us", href: "/about-us" },
-      { name: "Our Products", href: "https://royalhoses.tekbooster.com/" },
+      { name: "Our Products", href: "/our-products" },
       { name: "Contact Us", href: "/contact-us" },
     ]);
   }, []);

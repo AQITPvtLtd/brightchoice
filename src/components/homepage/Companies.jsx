@@ -11,18 +11,18 @@ export default function Companies() {
       const data = [
         {
           id: 1,
-          name: "Bright Choice Trading LLC",
+          name: "Royal Hoses - Bright Choice Trading LLC",
           image: "/companies/img.png",
-          link: "/bright-choice-trading-llc",
+          link: "/our-products",
         },
+        // {
+        //   id: 2,
+        //   name: "Royal Hoses",
+        //   image: "/companies/img1.png",
+        //   link: "https://royalhoses.tekbooster.com/",
+        // },
         {
           id: 2,
-          name: "Royal Hoses",
-          image: "/companies/img1.png",
-          link: "https://royalhoses.tekbooster.com/",
-        },
-        {
-          id: 3,
           name: "Marble Art LLC",
           image: "/companies/img2.png",
           link: "/marble-art-llc",
@@ -36,7 +36,7 @@ export default function Companies() {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {companies.map((company) => (
             <div
               key={company.id}

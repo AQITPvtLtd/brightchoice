@@ -60,7 +60,7 @@ export default function WhatWeDo() {
             className="text-2xl md:text-3xl font-semibold leading-snug mb-6"
             style={{ fontFamily: "Roboto Slab, serif" }}
           >
-            Pvc & PE Lay Flat Hose in the World
+            Pvc Lay Flat Hose in the World
             and building effective
           </h2>
 

@@ -1,0 +1,121 @@
+import React from 'react'
+import Image from 'next/image'
+
+const Gas = () => {
+    return (
+        <div>
+            <section className="relative w-full h-[200px] md:h-[200px] flex items-center">
+                {/* Background Image */}
+                <Image
+                    src="/products/productbg.jpg"   // ← Replace with your actual image path
+                    alt="Banner"
+                    fill
+                    className="object-cover brightness-[0.65]"
+                    priority
+                />
+
+                {/* Content Overlay */}
+                <div className="relative z-10 mx-10 px-5 text-center justify-center w-full">
+                    <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight mb-5"
+                        style={{ fontFamily: "Roboto Slab, serif" }}
+                    >
+                        Gas Hose
+                    </h1>
+                </div>
+            </section>
+
+            <section className="py-16 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4">
+
+                    {/* PAGE HEADER */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+                        {/* LEFT CONTENT */}
+                        <div>
+                            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5" style={{ fontFamily: "Roboto Slab, serif" }}>
+                                Gas Hose
+                            </h1>
+
+                            <p className="text-gray-700 leading-relaxed mb-4">
+                                Manufactured with high tensity yarn and three-layer PVC, our gas hose also known as multipurpose hose provides superior ultra smooth pressure of airflow for all your pneumatic needs.
+                            </p>
+
+                            <p className="text-gray-700 leading-relaxed mb-4">
+                                Hose comes in Red, Blue and Yellow Colour. Our 50M hose is majorly used in automobile workshops, factories, and construction sites.
+                            </p>
+
+                            <p className="text-gray-900 font-semibold mt-6">
+                                <strong>Note:</strong> All our hoses are UAE made with certification and 6 months manufacturing defect warranty
+                            </p>
+                        </div>
+
+                        {/* RIGHT IMAGE */}
+                        <div>
+                            <Image
+                                src="/products/gas-hose.jpg"
+                                alt="Gas Hose"
+                                width={600}
+                                height={600}
+                                className="w-full h-100 object-cover rounded-xl shadow-lg border"
+                            />
+                        </div>
+
+                    </div>
+
+                    {/* SPECIFICATIONS TABLE */}
+                    <h2 className="text-2xl font-bold text-gray-900 mt-16 mb-6 text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
+                        Specifications
+                    </h2>
+
+                    <div className="overflow-x-auto">
+                        <table className="w-full text-left border-collapse">
+                            <thead>
+                                <tr className="bg-gray-200 text-gray-900 text-center">
+                                    <th className="border px-4 py-3 font-semibold text-sm">
+                                        Internal Diameter
+                                    </th>
+                                    <th className="border px-4 py-3 font-semibold text-sm">
+                                        External Diameter
+                                    </th>
+                                    <th className="border px-4 py-3 font-semibold text-sm">
+                                        Maximum Working Pressure
+                                    </th>
+                                    <th className="border px-4 py-3 font-semibold text-sm">
+                                        Length (Meter)
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                {[
+                                    ["6MM", "12MM", "20BAR", "100M"],
+                                    ["8MM", "14MM", "20BAR", "50M"],
+                                    ["8MM", "14MM", "20BAR", "100M"],
+                                    ["10MM", "17MM", "20BAR", "50M"],
+                                    ["10MM", "17MM", "20BAR", "100M"],
+                                    ["13MM", "19MM", "20BAR", "50M"],
+                                    ["13MM", "19MM", "20BAR", "100M"],
+                                    ["19MM", "28MM", "20BAR", "25M"],
+                                    ["19MM", "28MM", "20BAR", "50M"],
+                                    ["25MM", "35MM", "20BAR", "25M"],
+                                    ["25MM", "35MM", "20BAR", "50M"],
+                                ].map((row, index) => (
+                                    <tr key={index} className="bg-white text-gray-800">
+                                        {row.map((col, i) => (
+                                            <td key={i} className="border px-4 py-3 text-sm text-center">
+                                                {col}
+                                            </td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    )
+}
+
+export default Gas

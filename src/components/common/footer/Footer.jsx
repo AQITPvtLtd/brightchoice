@@ -34,16 +34,16 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>
               <Link href="/" className="hover:text-gray-900 transition">
-                Bright Choice Trading LLC
+                Royal Hoses - Bright Choice Trading LLC
               </Link>
             </li>
             <li>
               <Link
-                href="https://royalhoses.tekbooster.com/"
+                href="/marble-art-llc"
                 target="_blank"
                 className="hover:text-gray-900 transition"
               >
-                Royale Hoses
+                Marble Art LLC
               </Link>
             </li>
           </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-700 text-sm">
             <li><Link href="/" className="hover:text-gray-900 transition">Home</Link></li>
             <li><Link href="/about-us" className="hover:text-gray-900 transition">About Us</Link></li>
-            <li><Link href="https://royalhoses.tekbooster.com/" className="hover:text-gray-900 transition">Our Products</Link></li>
+            <li><Link href="/our-products" className="hover:text-gray-900 transition">Our Products</Link></li>
             <li><Link href="/contact-us" className="hover:text-gray-900 transition">Contact Us</Link></li>
           </ul>
         </div>
@@ -68,7 +68,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaUser className="text-gray-900" />
               <Link href="https://maps.app.goo.gl/oFM717mUQrRWVJcQ9" target="_blank" className="hover:text-gray-900 transition">
-                Bright Choice Trading LLC
+                Royal Hoses - Bright Choice Trading LLC
               </Link>
             </li>
 

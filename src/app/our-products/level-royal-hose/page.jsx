@@ -1,10 +1,10 @@
 import React from 'react'
-import OurCompanies from './OurCompanies'
+import Levelroyal from './Levelroyal'
 
 const page = () => {
   return (
-    <div>
-        <OurCompanies />
+    <div className='pt-28 bg-white'>
+      <Levelroyal />
     </div>
   )
 }

@@ -114,6 +114,66 @@ const products = [
         image: "/products/dwp.webp",
         link: "/products/pumps/diesel-driven-centrifugal-pumps",
     },
+    {
+        id: 16,
+        title: "Level Royal Hose",
+        image: "/products/level-royal-hose.jpg",
+        link: "/products/level-royal-hose",
+    },
+    {
+        id: 17,
+        title: "Layflat Discharge Hose",
+        image: "/products/layflat-discharge-hose.jpg",
+        link: "/products/layflat-discharge-hose",
+    },
+    {
+        id: 18,
+        title: "Fire Hoses Royal",
+        image: "/products/fire-hoses-royal.jpg",
+        link: "/products/royal-fire-hoses",
+    },
+    {
+        id: 19,
+        title: "Garden Hose High Pressure",
+        image: "/products/garden-hose-high-pressure.jpg",
+        link: "/products/royal-reinforced-hose-high-pressure",
+    },
+    {
+        id: 20,
+        title: "Layflat Dewatering Royal Hose",
+        image: "/products/layflat-dewatering-royal-hose.jpg",
+        link: "/products/layflat-dewatering-royal-hose",
+    },
+    {
+        id: 21,
+        title: "Reinforced Garden Hose",
+        image: "/products/reinforced-garden-hose.jpg",
+        link: "/products/reinforced-garden-hose",
+    },
+    {
+        id: 22,
+        title: "Gas Hose",
+        image: "/products/gas-hose.jpg",
+        link: "/products/gas-hose",
+    },
+    {
+        id: 23,
+        title: "Pteroleum Hose",
+        image: "/products/pteroleum-hose.webp",
+        link: "https://docs.google.com/document/d/1rwJWIldj53OjH1eDt9a7JDKizLRutnl8/edit#heading=h.4166nxr3b5lo",
+    },
+    {
+        id: 24,
+        title: "Air Hose",
+        image: "/products/air-hose.webp",
+        link: "https://docs.google.com/document/d/1rwJWIldj53OjH1eDt9a7JDKizLRutnl8/edit?tab=t.0",
+    },
+    {
+        id: 25,
+        title: "Hydraulic Hose",
+        image: "/products/hydraulic-hose.webp",
+        link: "https://docs.google.com/document/d/1rwJWIldj53OjH1eDt9a7JDKizLRutnl8/edit?tab=t.0",
+    },
 ];
 
 const Tradingllc = () => {

@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
-    show: { 
-        opacity: 1, 
+    show: {
+        opacity: 1,
         y: 0,
         transition: { duration: 0.7, ease: "easeOut" }
     }
@@ -75,7 +75,7 @@ export default function Contact() {
                             <motion.li className="flex items-center gap-3" variants={fadeUp}>
                                 <FaUser />
                                 <Link href="https://maps.app.goo.gl/vLd5Y6T51F3m75Ux6" target="_blank">
-                                    Bright Choice Trading LLC
+                                    Royal Hoses - Bright Choice Trading LLC
                                 </Link>
                             </motion.li>
 
