@@ -17,29 +17,45 @@ const fadeUp = {
 export default function Banner() {
   return (
     <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[80vh] mt-20 overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src="/banner/banner.jpg"
-        alt="Background"
-        fill
-        className="object-cover md:object-fill"
-        priority
-      />
+
+      {/* 🔹 Mobile Background Image */}
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src="/banner/mob.jpg"
+          alt="Mobile Background"
+          fill
+          className="object-fill"
+          priority
+        />
+      </div>
+
+      {/* 🔹 Desktop Background Image */}
+      <div className="absolute inset-0 hidden md:block">
+        <Image
+          src="/banner/banner.jpg"
+          alt="Desktop Background"
+          fill
+          className="object-fill"
+          priority
+        />
+      </div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/10"></div>
 
       {/* Content */}
-      <div className="
-  relative z-10 
-  flex flex-col 
-  justify-start md:justify-center 
-  h-full 
-  px-6 sm:px-12 md:px-20 lg:px-28 
-  pt-10 md:pt-0      /* 👈 mobile par thoda gap, md se center */
-  text-white 
-  max-w-3xl
-">
+      <div
+        className="
+          relative z-10 
+          flex flex-col 
+          justify-start md:justify-center 
+          h-full 
+          px-6 sm:px-12 md:px-20 lg:px-28 
+          pt-10 md:pt-0 
+          text-white 
+          max-w-3xl
+        "
+      >
         {/* Heading */}
         <motion.h1
           variants={fadeUp}
@@ -60,19 +76,18 @@ export default function Banner() {
           whileInView="show"
           viewport={{ once: false, amount: 0.5 }}
           custom={0.4}
-          className="text-sm md:text-sm lg:text-sm xl:text-sm leading-relaxed mb-8 text-black"
+          className="text-sm md:text-sm lg:text-sm xl:text-sm leading-relaxed mb-4 md:mb-8 text-black"
         >
-          Since our inception, Rav Group has built a strong business
-          <span className="hidden md:inline"><br /></span>
+          Since our inception, Rav Group has built a strong business &nbsp;
+          <br className="hidden md:inline" />
           model rooted in long-term relationships, quality commitment,
-          <span className="hidden md:inline"><br /></span>
-          and reliable service. Trusted across the Middle East and
-          <span className="hidden md:inline"><br /></span>
+          <br className="hidden md:inline" />
+          and reliable service. Trusted across the Middle East and &nbsp;
+          <br className="hidden md:inline" />
           North Africa, we proudly serve multiple industries as a
-          <span className="hidden md:inline"><br /></span>
+          <br className="hidden md:inline" />
           preferred supplier known for timely delivery and excellence.
         </motion.p>
-
 
         {/* Button */}
         <motion.div
@@ -85,25 +100,24 @@ export default function Banner() {
           <Link
             href="/about-us"
             className="
-    inline-block 
-    border border-[#2a2a2a] 
-    bg-[#2a2a2a] 
-    text-white 
-    px-6 py-3 
-    rounded-full 
-    text-sm md:text-base 
-    font-medium 
-    transition-all duration-300 
-    hover:bg-black 
-    hover:text-white 
-    hover:-translate-y-1 
-    hover:shadow-lg
-    w-fit
-  "
+              inline-block 
+              border border-[#2a2a2a] 
+              bg-[#2a2a2a] 
+              text-white 
+              px-6 py-3 
+              rounded-full 
+              text-sm md:text-base 
+              font-medium 
+              transition-all duration-300 
+              hover:bg-black 
+              hover:text-white 
+              hover:-translate-y-1 
+              hover:shadow-lg
+              w-fit
+            "
           >
             KNOW MORE
           </Link>
-
         </motion.div>
       </div>
     </section>
