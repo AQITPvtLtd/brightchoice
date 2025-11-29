@@ -35,10 +35,10 @@ export default function WhatWeDo() {
         >
           <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-md">
             <Image
-              src="/about/about.png"
+              src="/about/about1.jpg"
               alt="PVC Hose Field"
               fill
-              className="object-cover object-center"
+              className="object-fit"
               priority
             />
           </div>

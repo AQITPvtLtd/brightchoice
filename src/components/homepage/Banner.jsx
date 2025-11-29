@@ -16,13 +16,13 @@ const fadeUp = {
 
 export default function Banner() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] mt-20 overflow-hidden">
+    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[80vh] mt-20 overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/banner/banner1.png"
+        src="/banner/banner.jpg"
         alt="Background"
         fill
-        className="object-cover object-center"
+        className="object-cover md:object-fill"
         priority
       />
 
@@ -39,7 +39,7 @@ export default function Banner() {
           whileInView="show"
           viewport={{ once: false, amount: 0.5 }}
           custom={0.2}
-          className="text-4xl md:text-5xl font-semibold mb-6"
+          className="text-4xl md:text-5xl font-semibold mb-6 text-[#2a2a2a]"
           style={{ fontFamily: "Roboto Slab, serif" }}
         >
           PVC Hoses
@@ -52,14 +52,19 @@ export default function Banner() {
           whileInView="show"
           viewport={{ once: false, amount: 0.5 }}
           custom={0.4}
-          className="text-base md:text-sm lg:text-sm xl:text-sm leading-relaxed mb-8"
+          className="text-sm md:text-sm lg:text-sm xl:text-sm leading-relaxed mb-8 text-black"
         >
-          Since inception, We at Rav Group have established & built our business model by
-          maintaining long term relationships with our clients, suppliers & business partners.
-          Highly trusted for our commitment to quality, customer service and timely delivery,
-          we at Rav Group pride ourselves at being a preferred supplier to the Middle Eastern
-          And North Africa Region with multiple industries in UAE and Middle East.
+          Since our inception, Rav Group has built a strong business
+          <span className="hidden md:inline"><br /></span>
+          model rooted in long-term relationships, quality commitment,
+          <span className="hidden md:inline"><br /></span>
+          and reliable service. Trusted across the Middle East and
+          <span className="hidden md:inline"><br /></span>
+          North Africa, we proudly serve multiple industries as a
+          <span className="hidden md:inline"><br /></span>
+          preferred supplier known for timely delivery and excellence.
         </motion.p>
+
 
         {/* Button */}
         <motion.div
@@ -71,12 +76,26 @@ export default function Banner() {
         >
           <Link
             href="/about-us"
-            className="inline-block border border-white text-white px-6 py-3 rounded-full 
-            text-sm md:text-base font-medium hover:bg-white hover:text-black 
-            transition-all duration-300 w-fit"
+            className="
+    inline-block 
+    border border-[#2a2a2a] 
+    bg-[#2a2a2a] 
+    text-white 
+    px-6 py-3 
+    rounded-full 
+    text-sm md:text-base 
+    font-medium 
+    transition-all duration-300 
+    hover:bg-black 
+    hover:text-white 
+    hover:-translate-y-1 
+    hover:shadow-lg
+    w-fit
+  "
           >
             KNOW MORE
           </Link>
+
         </motion.div>
       </div>
     </section>
