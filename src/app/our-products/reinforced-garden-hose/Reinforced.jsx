@@ -1,6 +1,11 @@
+"use client";
+import { useState } from "react";
 import React from 'react'
 import Image from 'next/image'
+import QuoteModal from "../quotemodal/QuoteModal";
+import ModalForm from "../modalform/ModalForm";
 const Reinforced = () => {
+    const [open, setOpen] = useState(false);
     return (
         <div>
             <section className="relative w-full h-[200px] md:h-[200px] flex items-center">
@@ -50,8 +55,18 @@ const Reinforced = () => {
                             <p className="text-gray-900 font-semibold mt-6">
                                 <strong>Note:</strong> All our hoses are UAE made with certification and 6 months manufacturing defect warranty
                             </p>
+                            <button onClick={() => setOpen(true)} className="bg-[#2a2a2a] cursor-pointer transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-lg text-white font-semibold px-6 py-3 rounded-md mt-6">
+                                GET A QUOTE
+                            </button>
                         </div>
+                        {/* Popup Modal */}
+                        <QuoteModal isOpen={open} onClose={() => setOpen(false)}>
+                            <h2 className="text-xl font-bold mb-4">Get a Quote</h2>
 
+                            {/* Your Contact Form here */}
+                            <ModalForm />
+
+                        </QuoteModal>
                         {/* RIGHT IMAGE */}
                         <div>
                             <Image

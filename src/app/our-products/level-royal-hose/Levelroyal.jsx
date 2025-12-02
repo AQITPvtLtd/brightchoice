@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
-
+import QuoteModal from "../quotemodal/QuoteModal";
+import ModalForm from "../modalform/ModalForm";
 const Levelroyal = () => {
+    const [open, setOpen] = useState(false);
     return (
         <div>
             <section className="relative w-full h-[200px] md:h-[200px] flex items-center">
@@ -55,8 +58,19 @@ const Levelroyal = () => {
                                 <strong>Note:</strong> All our hoses are UAE-made with certification and come
                                 with a 6-month manufacturing defect warranty.
                             </p>
-                        </div>
 
+                            <button onClick={() => setOpen(true)} className="bg-[#2a2a2a] cursor-pointer transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-lg text-white font-semibold px-6 py-3 rounded-md mt-6">
+                                GET A QUOTE
+                            </button>
+                        </div>
+                        {/* Popup Modal */}
+                        <QuoteModal isOpen={open} onClose={() => setOpen(false)}>
+                            <h2 className="text-xl font-bold mb-4">Get a Quote</h2>
+
+                            {/* Your Contact Form here */}
+                            <ModalForm />
+
+                        </QuoteModal>
                         <div>
                             <Image
                                 src="/products/level-royal-hose.jpg"
