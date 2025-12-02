@@ -3,47 +3,51 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
-const leftToRight = {
-  hidden: { opacity: 0, x: -50 },
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
   show: {
     opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
-
-const rightToLeft = {
-  hidden: { opacity: 0, x: 50 },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
+    y: 0,
+    transition: { duration: 0.9, ease: "easeOut" },
   },
 };
 
 export default function AboutUs() {
   return (
-    <section className="w-full bg-white text-[#0e0e0e] mt-20 overflow-x-hidden">
-      {/* Top Dark Section */}
-      <div className="bg-[#2a2a2a] py-16 text-center">
-        <h1
-          className="text-4xl font-semibold text-white"
+    <section className="relative w-full text-white mt-20 overflow-hidden">
+
+      {/* 🔥 Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/companies/newbrightchoice.jpg"
+          alt="About Background"
+          fill
+          priority
+          className="object-cover object-center brightness-[0.90]"
+        />
+      </div>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+     
+      <div className="relative py-20 text-center">
+        <motion.h1
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          className="text-4xl font-semibold tracking-wide"
           style={{ fontFamily: "Roboto Slab, serif" }}
         >
           About Us
-        </h1>
+        </motion.h1>
       </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12 items-stretch">
-
-        {/* LEFT CONTENT — LEFT -> RIGHT Animation */}
+   
+      <div className="relative max-w-5xl mx-auto px-6 pb-16">
         <motion.div
-          className="lg:w-[55%] text-gray-700 text-sm leading-relaxed space-y-4 lg:pl-10"
-          variants={leftToRight}
+          variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          className="bg-white/10 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-xl text-sm leading-relaxed space-y-4"
         >
           <p>
             Since 1982, Rav Group continues to take a leading role in the irrigation industry by
@@ -71,13 +75,15 @@ export default function AboutUs() {
           <p>
             Rav Group in cooperation with its sister concern Bright Choice Trading LLC &amp;
             Ravankar Plastic LLC in UAE has achieved being a one stop shop solution for all your{" "}
-            <strong className="text-[#0e0e0e] font-semibold">
+            <strong className="font-semibold">
               WATER DELIVERY, DEWATERING, CONSTRUCTION, IRRIGATION &amp; DELIVERY HOSES SOLUTIONS.
             </strong>
           </p>
 
           <div>
-            <h3 className="font-semibold text-[#0e0e0e] mt-6 mb-3">Our Core Values:</h3>
+            <h3 className="font-semibold text-white mt-6 mb-3 text-lg">
+              Our Core Values:
+            </h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Credibility</li>
               <li>Quality Consciousness</li>
@@ -87,24 +93,6 @@ export default function AboutUs() {
             </ul>
           </div>
         </motion.div>
-
-        {/* RIGHT IMAGE — RIGHT -> LEFT Animation */}
-        <motion.div
-          className="lg:w-[45%] flex justify-center items-stretch"
-          variants={rightToLeft}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          <Image
-            src="/about/img.png"
-            alt="Green Hose on Grass"
-            width={600}
-            height={400}
-            className="rounded-2xl object-cover w-full h-full max-h-[1000px]"
-          />
-        </motion.div>
-
       </div>
     </section>
   );

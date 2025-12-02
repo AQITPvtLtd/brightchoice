@@ -12,7 +12,7 @@ export default function Companies() {
         {
           id: 1,
           name: "Royal Hoses - Bright Choice Trading LLC",
-          image: "/companies/img.png",
+          image: "/companies/newbrightchoice.jpg",
           link: "/our-products",
         },
         // {
@@ -42,7 +42,7 @@ export default function Companies() {
               key={company.id}
               className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition"
             >
-              <div className="relative w-full h-64 sm:h-72 lg:h-80">
+              <div className="relative w-full h-64">
                 <Image
                   src={company.image}
                   alt={company.name}
