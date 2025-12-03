@@ -11,7 +11,7 @@ export default function Companies() {
       const data = [
         {
           id: 1,
-          name: "Royal Hoses - Bright Choice Trading LLC",
+          name: "Bright Choice Trading LLC - Royal Hoses",
           image: "/companies/newbrightchoice.jpg",
           link: "/our-products",
         },

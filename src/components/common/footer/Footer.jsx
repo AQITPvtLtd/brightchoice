@@ -34,7 +34,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>
               <Link href="/" className="hover:text-gray-900 transition">
-                Royal Hoses - Bright Choice Trading LLC
+                Bright Choice Trading LLC - Royal Hoses
               </Link>
             </li>
             <li>
@@ -68,7 +68,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaUser className="text-gray-900" />
               <Link href="https://maps.app.goo.gl/oFM717mUQrRWVJcQ9" target="_blank" className="hover:text-gray-900 transition">
-                Royal Hoses - Bright Choice Trading LLC
+                Bright Choice Trading LLC - Royal Hoses
               </Link>
             </li>
 

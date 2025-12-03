@@ -75,7 +75,7 @@ export default function Contact() {
                             <motion.li className="flex items-center gap-3" variants={fadeUp}>
                                 <FaUser />
                                 <Link href="https://maps.app.goo.gl/vLd5Y6T51F3m75Ux6" target="_blank">
-                                    Royal Hoses - Bright Choice Trading LLC
+                                    Bright Choice Trading LLC - Royal Hoses
                                 </Link>
                             </motion.li>
 
