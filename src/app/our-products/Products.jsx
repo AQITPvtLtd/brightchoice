@@ -134,15 +134,15 @@ const products = [
     },
     {
         id: 19,
-        title: "Hose Mender",
-        image: "/products/hosemender.webp",
-        link: "/our-products/fittings/hose-menders",
-    },
-    {
-        id: 20,
         title: "Hex Nipples",
         image: "/products/hexnipples.webp",
         link: "/our-products/fittings/hex-nipples",
+    },
+    {
+        id: 20,
+        title: "Hose Mender",
+        image: "/products/hosemender.webp",
+        link: "/our-products/fittings/hose-menders",
     },
     {
         id: 21,
