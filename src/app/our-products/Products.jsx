@@ -146,21 +146,21 @@ const products = [
     },
     {
         id: 21,
+        title: "Hose Clips",
+        image: "/products/hoseclip.webp",
+        link: "/our-products/clamps/hose-clips",
+    },
+    {
+        id: 22,
         title: "Single Bolt Clamps",
         image: "/products/singlebolt.webp",
         link: "/our-products/clamps/single-bolt-clamps",
     },
     {
-        id: 22,
+        id: 23,
         title: "Double Bolt Clamps",
         image: "/products/doublbolt.webp",
         link: "/our-products/clamps/double-bolt-clamps",
-    },
-    {
-        id: 23,
-        title: "Hose Clips",
-        image: "/products/hoseclip.webp",
-        link: "/our-products/clamps/hose-clips",
     },
     {
         id: 24,
