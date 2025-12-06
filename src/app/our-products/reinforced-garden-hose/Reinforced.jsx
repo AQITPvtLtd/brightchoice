@@ -70,7 +70,7 @@ const Reinforced = () => {
                         {/* RIGHT IMAGE */}
                         <div>
                             <Image
-                                src="/products/reinforced-garden-hose.jpg"
+                                src="/products/reinforced-garden-hose1.png"
                                 alt="Reinforced Garden Hose"
                                 width={600}
                                 height={600}

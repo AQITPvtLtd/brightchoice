@@ -111,7 +111,7 @@ const products = [
     {
         id: 55,
         title: "Reinforced Garden Hose",
-        image: "/products/reinforced-garden-hose.jpg",
+        image: "/products/reinforced-garden-hose1.png",
         link: "/our-products/reinforced-garden-hose",
     },
     {
