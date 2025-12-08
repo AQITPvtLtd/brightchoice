@@ -114,7 +114,7 @@ export default function Banner() {
     }),
   };
 
-  const contentIndex = index % originalLength;
+  const contentIndex = ((index % originalLength) + originalLength) % originalLength;
 
   return (
     <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[80vh] mt-20 overflow-hidden">
@@ -163,8 +163,8 @@ export default function Banner() {
     transition-all duration-500
 
     ${contentIndex === 0
-            ? "items-center text-center px-0 w-full"
-            : "items-start text-left px-4 sm:px-6 md:px-10 lg:px-12 max-w-lg"}
+            ? "items-center text-center px-5 w-full"
+            : "items-start text-left px-4 sm:px-6 md:px-10 lg:px-25 xl:px-33 lg:pt-25 xl:pt-35 md:pt-0 md:max-w-lg lg:max-w-xl"}
   `}
       >
 
@@ -215,6 +215,48 @@ export default function Banner() {
         </motion.div>
 
       </div>
+
+      {/* LEFT ARROW */}
+      <button
+        onClick={() => setIndex((prev) => prev - 1)}
+        className="absolute left-3 
+        top-[70%] md:top-1/2 -translate-y-1/2 
+        z-20 bg-black/40 hover:bg-black/60 
+        text-white cursor-pointer 
+        p-2 md:p-3        /* mobile smaller padding */
+        rounded-full transition-all duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-4 h-4 md:w-6 md:h-6"   /* mobile smaller icon */
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      {/* RIGHT ARROW */}
+      <button
+        onClick={() => setIndex((prev) => prev + 1)}
+        className="absolute right-3 
+        top-[70%] md:top-1/2 -translate-y-1/2 
+        z-20 bg-black/40 hover:bg-black/60 
+        text-white cursor-pointer 
+        p-2 md:p-3        /* mobile smaller padding */
+        rounded-full transition-all duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-4 h-4 md:w-6 md:h-6"   /* mobile smaller icon */
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
 
     </section>
   );

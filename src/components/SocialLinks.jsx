@@ -86,8 +86,8 @@ export default function SocialLinks() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed top-1/2 right-0 transform -translate-y-1/2 cursor-pointer
-            bg-[#2a2a2a] pl-1 pt-1 pb-1 rounded-l-xl shadow-lg z-50"
+          className="fixed top-[40%] right-0 transform -translate-y-1/2 cursor-pointer
+  bg-[#2a2a2a] pl-1 pt-1 pb-1 rounded-l-xl shadow-lg z-50"
         >
           <Image src="/sidebar/toggel.png" width={40} height={40} alt="" />
         </button>
