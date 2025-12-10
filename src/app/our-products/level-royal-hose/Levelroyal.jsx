@@ -71,13 +71,22 @@ const Levelroyal = () => {
                             <ModalForm />
 
                         </QuoteModal>
-                        <div className="p-2 md:p-5 bg-white rounded-xl shadow-md">
+                        {/* <div className="p-2 md:p-2 bg-white rounded-xl shadow-md">
                             <Image
                                 src="/products/level-royal-hose.jpg"
                                 alt="Level Royal Hose"
                                 width={600}
                                 height={600}
-                                className="w-full h-80 object-cover"
+                                className="w-full h-80 object-contain"
+                            />
+                        </div> */}
+                        <div>
+                            <Image
+                                src="/products/level-royal-hose1.jpg"
+                                alt="Reinforced Garden Hose"
+                                width={600}
+                                height={600}
+                                className="w-full h-auto object-contain rounded-xl shadow-lg border"
                             />
                         </div>
                     </div>
